@@ -59,5 +59,37 @@ export const MenuContainer = styled.div`
     height: 24px;
     background-size: cover;
     background-position: center;
+    cursor: pointer;
   }
+`;
+
+export const MobileMenu = styled.div`
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 75%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+  list-style: none;
+  line-height: 50px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  text-decoration: none;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const CloseMenuIcon = styled.div`
+  align-self: flex-end;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-bottom: 20px;
 `;
